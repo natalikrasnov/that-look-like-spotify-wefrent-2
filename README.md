@@ -11,8 +11,8 @@ Generated application files are committed to the repository default branch after
   "id": "bmF0YWxpa3Jhc25vdi90aGF0LWxvb2stbGlrZS1zcG90aWZ5LXdlZnJlbnQtMg",
   "name": "NoirTune AI",
   "summary": "A mobile-first, dark-mode, Spotify-inspired web app that lets users generate AI-style music from prompts, manage a personal library of created tracks, and play, delete, download, or share them—all running fully client-side as a static site.",
-  "status": "GENERATING_PROMPT",
-  "currentStep": "Generating Codex prompt",
+  "status": "SENDING_TO_CODEX",
+  "currentStep": "Submitting prompt to Codex",
   "githubRepoUrl": "https://github.com/natalikrasnov/that-look-like-spotify-wefrent-2",
   "githubOwner": "natalikrasnov",
   "githubRepo": "that-look-like-spotify-wefrent-2",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T11:04:53.779Z",
+  "updatedAt": "2026-05-27T11:04:55.481Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -56,6 +56,13 @@ Generated application files are committed to the repository default branch after
       "message": "Generated structured Codex prompt",
       "level": "success",
       "status": "GENERATING_PROMPT"
+    },
+    {
+      "id": "action_a986ce0afbdb9740a598",
+      "at": "2026-05-27T11:04:55.481Z",
+      "message": "Sent prompt to Codex",
+      "level": "info",
+      "status": "SENDING_TO_CODEX"
     }
   ],
   "inputs": [
@@ -161,7 +168,7 @@ Generated application files are committed to the repository default branch after
 
 ## Status
 
-Current stage: **Generating Codex prompt**
+Current stage: **Submitting prompt to Codex**
 
 Complete: **no**
 
@@ -169,8 +176,8 @@ Complete: **no**
 | --- | --- |
 | Received user prompt | done |
 | Generated product requirements | done |
-| Created architecture plan | current |
-| Generated project code | pending |
+| Created architecture plan | done |
+| Generated project code | current |
 | Committed files to GitHub | pending |
 | Published project | pending |
 
@@ -298,6 +305,7 @@ create app that look like spotify with wefrent colors(must be dark mode). the pu
 - 2026-05-27T11:03:45.060Z - Generated structured product requirements (success)
 - 2026-05-27T11:03:48.039Z - Creating architecture and implementation prompt (info)
 - 2026-05-27T11:04:53.779Z - Generated structured Codex prompt (success)
+- 2026-05-27T11:04:55.481Z - Sent prompt to Codex (info)
 
 ## Latest Error
 
