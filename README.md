@@ -12,7 +12,7 @@ Generated application files are committed to the repository default branch after
   "name": "Pocket Mini App",
   "summary": "A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.",
   "status": "CODEX_WORKING",
-  "currentStep": "Codex is generating project files",
+  "currentStep": "Auto-fix agent repairing generated files",
   "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
   "githubOwner": "natalikrasnov",
   "githubRepo": "noirtune-ai",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T12:17:05.404Z",
+  "updatedAt": "2026-05-27T12:21:49.620Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -258,6 +258,14 @@ Generated application files are committed to the repository default branch after
       "message": "Codex started generation",
       "level": "info",
       "status": "CODEX_WORKING"
+    },
+    {
+      "id": "action_7e166402e145e168e5bb",
+      "at": "2026-05-27T12:21:49.620Z",
+      "message": "Auto-fix agent is retrying Codex with a smaller repair brief",
+      "level": "warning",
+      "status": "CODEX_WORKING",
+      "details": "Attempt 1 of 2.\nOriginal error: Codex returned no generated files.\nCode: CODEX_EMPTY_RESPONSE"
     }
   ],
   "inputs": [
@@ -442,15 +450,27 @@ Generated application files are committed to the repository default branch after
     }
   ],
   "lastCommittedPaths": [],
-  "autoRepairAttempts": [],
+  "autoRepairAttempts": [
+    {
+      "id": "repair_1de83690cb4a6a7a16e5",
+      "at": "2026-05-27T12:21:49.361Z",
+      "kind": "codex_generation",
+      "inputId": "input_c88e737f2c6e96ec997a",
+      "fromStatus": "CODEX_WORKING",
+      "nextStatus": "CODEX_WORKING",
+      "code": "CODEX_EMPTY_RESPONSE",
+      "message": "Codex returned no generated files."
+    }
+  ],
   "activeInputId": "input_c88e737f2c6e96ec997a",
-  "activeRunKind": "edit"
+  "activeRunKind": "edit",
+  "continueContext": "{\n  \"instruction\": \"Auto-repair this deployRocket run. Preserve the user's intent, but optimize for a compact successful static Vite React TypeScript project.\",\n  \"repairDirective\": \"The previous generated-file step failed. Return a smaller complete file set, avoid large data arrays and oversized CSS, and keep contentBase64 valid.\",\n  \"attemptNumber\": 1,\n  \"project\": {\n    \"name\": \"Pocket Mini App\",\n    \"summary\": \"A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.\",\n    \"repository\": \"https://github.com/natalikrasnov/noirtune-ai\"\n  },\n  \"latestError\": {\n    \"message\": \"Codex returned no generated files.\",\n    \"code\": \"CODEX_EMPTY_RESPONSE\",\n    \"details\": \"OpenAI response resp_0e94f971485fc3ff006a16e0c52e848193bbd94cf9fc812b82 did not contain a parsed generated_project payload.\"\n  }\n}"
 }
 ~~~
 
 ## Status
 
-Current stage: **Codex is generating project files**
+Current stage: **Auto-fix agent repairing generated files**
 
 Complete: **no**
 
@@ -633,6 +653,9 @@ Details: OpenAI response resp_09078af662a04171006a16dde70774819d919168945ee82a99
 - 2026-05-27T12:11:48.891Z - Generated structured Codex prompt (success)
 - 2026-05-27T12:11:51.161Z - Sent prompt to Codex (info)
 - 2026-05-27T12:11:58.549Z - Codex started generation (info)
+- 2026-05-27T12:21:49.620Z - Auto-fix agent is retrying Codex with a smaller repair brief (warning) - Attempt 1 of 2.
+Original error: Codex returned no generated files.
+Code: CODEX_EMPTY_RESPONSE
 
 ## Latest Error
 
