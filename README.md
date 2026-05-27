@@ -8,14 +8,14 @@ Generated application files are committed to the repository default branch after
 
 ~~~deployrocket-state-json
 {
-  "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
+  "id": "bmF0YWxpa3Jhc25vdi9wb2NrZXQtbWluaS1hcHA",
   "name": "Pocket Mini App",
   "summary": "A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.",
   "status": "FAILED",
   "currentStep": "Failed",
-  "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
+  "githubRepoUrl": "https://github.com/natalikrasnov/pocket-mini-app",
   "githubOwner": "natalikrasnov",
-  "githubRepo": "noirtune-ai",
+  "githubRepo": "pocket-mini-app",
   "githubUserLogin": "natalikrasnov",
   "githubDefaultBranch": "main",
   "error": {
@@ -30,7 +30,7 @@ Generated application files are committed to the repository default branch after
     "at": "2026-05-27T12:26:59.595Z"
   },
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T12:26:59.873Z",
+  "updatedAt": "2026-05-27T13:44:06.140Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -292,6 +292,14 @@ Generated application files are committed to the repository default branch after
       "level": "error",
       "status": "FAILED",
       "details": "The auto-fix agent tried 2 times for codex_generation.\n\nLast error: Codex returned malformed generated-file JSON.\n\nDetails: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors."
+    },
+    {
+      "id": "action_b483a90a7f74f8359857",
+      "at": "2026-05-27T13:44:06.140Z",
+      "message": "Renamed GitHub repository to pocket-mini-app",
+      "level": "success",
+      "status": "FAILED",
+      "details": "https://github.com/natalikrasnov/pocket-mini-app"
     }
   ],
   "inputs": [
@@ -522,7 +530,7 @@ Name: Pocket Mini App
 
 Summary: A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.
 
-Repository: https://github.com/natalikrasnov/noirtune-ai
+Repository: https://github.com/natalikrasnov/pocket-mini-app
 
 Live site: pending GitHub Pages publish
 
@@ -697,6 +705,7 @@ Code: CODEX_EMPTY_RESPONSE
 Last error: Codex returned malformed generated-file JSON.
 
 Details: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+- 2026-05-27T13:44:06.140Z - Renamed GitHub repository to pocket-mini-app (success) - https://github.com/natalikrasnov/pocket-mini-app
 
 ## Latest Error
 
