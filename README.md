@@ -11,8 +11,8 @@ Generated application files are committed to the repository default branch after
   "id": "bmF0YWxpa3Jhc25vdi90aGF0LWxvb2stbGlrZS1zcG90aWZ5LXdlZnJlbnQtMg",
   "name": "NoirTune AI",
   "summary": "A mobile-first, dark-mode, Spotify-inspired web app that lets users generate AI-style music from prompts, manage a personal library of created tracks, and play, delete, download, or share them—all running fully client-side as a static site.",
-  "status": "SENDING_TO_CODEX",
-  "currentStep": "Submitting prompt to Codex",
+  "status": "CODEX_WORKING",
+  "currentStep": "Codex is generating project files",
   "githubRepoUrl": "https://github.com/natalikrasnov/that-look-like-spotify-wefrent-2",
   "githubOwner": "natalikrasnov",
   "githubRepo": "that-look-like-spotify-wefrent-2",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T11:05:10.869Z",
+  "updatedAt": "2026-05-27T11:05:12.823Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -77,6 +77,13 @@ Generated application files are committed to the repository default branch after
       "message": "Sent prompt to Codex",
       "level": "info",
       "status": "SENDING_TO_CODEX"
+    },
+    {
+      "id": "action_a873a7729a1fbc5c151d",
+      "at": "2026-05-27T11:05:12.823Z",
+      "message": "Codex started generation",
+      "level": "info",
+      "status": "CODEX_WORKING"
     }
   ],
   "inputs": [
@@ -190,7 +197,7 @@ Generated application files are committed to the repository default branch after
 
 ## Status
 
-Current stage: **Submitting prompt to Codex**
+Current stage: **Codex is generating project files**
 
 Complete: **no**
 
@@ -338,6 +345,7 @@ create app that look like spotify with wefrent colors(must be dark mode). the pu
 - 2026-05-27T11:04:55.481Z - Sent prompt to Codex (info)
 - 2026-05-27T11:05:03.985Z - Generated structured Codex prompt (success)
 - 2026-05-27T11:05:05.819Z - Sent prompt to Codex (info)
+- 2026-05-27T11:05:12.823Z - Codex started generation (info)
 
 ## Latest Error
 
