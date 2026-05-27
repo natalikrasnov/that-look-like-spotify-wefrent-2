@@ -9,8 +9,8 @@ Generated application files are committed to the repository default branch after
 ~~~deployrocket-state-json
 {
   "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
-  "name": "NoirTune AI",
-  "summary": "A mobile-first, dark-mode, Spotify-inspired web app that lets users generate AI-style music from prompts, manage a personal library of created tracks, and play, delete, download, or share them—all running fully client-side as a static site.",
+  "name": "Pocket MVP",
+  "summary": "A small, mobile-first web app template suitable for a first-version release, running entirely in the browser as a static site.",
   "status": "PROCESSING_INPUT",
   "currentStep": "Processing input",
   "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T12:10:51.396Z",
+  "updatedAt": "2026-05-27T12:10:59.459Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -324,7 +324,39 @@ Generated application files are committed to the repository default branch after
       "kind": "edit",
       "text": "for the first version create a small app",
       "images": [],
-      "createdAt": "2026-05-27T12:10:42.291Z"
+      "createdAt": "2026-05-27T12:10:42.291Z",
+      "structuredRequirements": {
+        "projectName": "Pocket MVP",
+        "summary": "A small, mobile-first web app template suitable for a first-version release, running entirely in the browser as a static site.",
+        "intent": "Provide a minimal but complete first-version app scaffold that can be expanded later, including basic navigation, a sample feature, and local-only data persistence.",
+        "targetUsers": [
+          "Anyone needing a tiny first-version mobile web app scaffold",
+          "Solo builders prototyping an idea quickly on GitHub Pages"
+        ],
+        "coreFeatures": [
+          "Mobile-first responsive layout (touch-friendly, single-column default)",
+          "Home screen with a simple primary action (sample feature)",
+          "Create/list/delete simple items (sample data model)",
+          "Client-side persistence using localStorage",
+          "Basic settings screen (clear data/reset app)",
+          "Offline-friendly static assets (no backend calls required)"
+        ],
+        "screens": [
+          "Home (item list + add item)",
+          "Add/Edit Item (simple form)",
+          "Settings (reset/clear local data, app info)",
+          "About/Help (brief usage instructions)"
+        ],
+        "designDirection": "Minimal, clean UI optimized for small screens: top header, bottom nav (or simple tab buttons), large tap targets, system fonts, light/dark mode via CSS.",
+        "constraints": [
+          "Must be a serverless, browser-only web app runnable from static files on GitHub Pages",
+          "No backend/API/database/auth; simulate persistence via localStorage and in-memory state",
+          "No scheduled jobs; any reminders/updates must be user-triggered in the UI",
+          "Keep scope small for v1; codebase should be easy to extend"
+        ],
+        "imageContext": [],
+        "repositoryNameSuggestion": "pocket-mvp"
+      }
     }
   ],
   "lastCommittedPaths": [],
@@ -351,9 +383,9 @@ Complete: **no**
 
 ## Project
 
-Name: NoirTune AI
+Name: Pocket MVP
 
-Summary: A mobile-first, dark-mode, Spotify-inspired web app that lets users generate AI-style music from prompts, manage a personal library of created tracks, and play, delete, download, or share them—all running fully client-side as a static site.
+Summary: A small, mobile-first web app template suitable for a first-version release, running entirely in the browser as a static site.
 
 Repository: https://github.com/natalikrasnov/noirtune-ai
 
@@ -371,7 +403,42 @@ for the first version create a small app
 
 ## Architecture And Prompt
 
-Structured requirements are pending.
+### Structured Requirements
+
+~~~json
+{
+  "projectName": "Pocket MVP",
+  "summary": "A small, mobile-first web app template suitable for a first-version release, running entirely in the browser as a static site.",
+  "intent": "Provide a minimal but complete first-version app scaffold that can be expanded later, including basic navigation, a sample feature, and local-only data persistence.",
+  "targetUsers": [
+    "Anyone needing a tiny first-version mobile web app scaffold",
+    "Solo builders prototyping an idea quickly on GitHub Pages"
+  ],
+  "coreFeatures": [
+    "Mobile-first responsive layout (touch-friendly, single-column default)",
+    "Home screen with a simple primary action (sample feature)",
+    "Create/list/delete simple items (sample data model)",
+    "Client-side persistence using localStorage",
+    "Basic settings screen (clear data/reset app)",
+    "Offline-friendly static assets (no backend calls required)"
+  ],
+  "screens": [
+    "Home (item list + add item)",
+    "Add/Edit Item (simple form)",
+    "Settings (reset/clear local data, app info)",
+    "About/Help (brief usage instructions)"
+  ],
+  "designDirection": "Minimal, clean UI optimized for small screens: top header, bottom nav (or simple tab buttons), large tap targets, system fonts, light/dark mode via CSS.",
+  "constraints": [
+    "Must be a serverless, browser-only web app runnable from static files on GitHub Pages",
+    "No backend/API/database/auth; simulate persistence via localStorage and in-memory state",
+    "No scheduled jobs; any reminders/updates must be user-triggered in the UI",
+    "Keep scope small for v1; codebase should be easy to extend"
+  ],
+  "imageContext": [],
+  "repositoryNameSuggestion": "pocket-mvp"
+}
+~~~
 
 Codex prompt plan is pending.
 
