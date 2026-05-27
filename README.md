@@ -11,16 +11,26 @@ Generated application files are committed to the repository default branch after
   "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
   "name": "NoirTune AI",
   "summary": "A mobile-first, dark-mode, Spotify-inspired web app that lets users generate AI-style music from prompts, manage a personal library of created tracks, and play, delete, download, or share them—all running fully client-side as a static site.",
-  "status": "CODEX_WORKING",
-  "currentStep": "Auto-fix agent repairing generated files",
+  "status": "FAILED",
+  "currentStep": "Failed",
   "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
   "githubOwner": "natalikrasnov",
   "githubRepo": "noirtune-ai",
   "githubUserLogin": "natalikrasnov",
   "githubDefaultBranch": "main",
-  "error": null,
+  "error": {
+    "message": "Auto-fix agent needs user help to continue.",
+    "code": "AUTO_REPAIR_NEEDS_USER",
+    "details": "The auto-fix agent tried 2 times for codex_generation.\n\nLast error: Codex returned no generated files.\n\nDetails: OpenAI response resp_09078af662a04171006a16dde70774819d919168945ee82a99 did not contain a parsed generated_project payload.",
+    "setupInstructions": [
+      "Use Edit Mission and ask for a smaller first version.",
+      "Reduce large visual details, generated datasets, or file count.",
+      "Click Continue Mission after adjusting the request."
+    ],
+    "at": "2026-05-27T12:09:23.423Z"
+  },
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T12:04:51.219Z",
+  "updatedAt": "2026-05-27T12:09:23.709Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -194,6 +204,14 @@ Generated application files are committed to the repository default branch after
       "level": "warning",
       "status": "CODEX_WORKING",
       "details": "Attempt 2 of 2.\nOriginal error: Codex returned no generated files.\nCode: CODEX_EMPTY_RESPONSE"
+    },
+    {
+      "id": "action_959794cbcf03759d909b",
+      "at": "2026-05-27T12:09:23.709Z",
+      "message": "Auto-fix agent needs user help to continue.",
+      "level": "error",
+      "status": "FAILED",
+      "details": "The auto-fix agent tried 2 times for codex_generation.\n\nLast error: Codex returned no generated files.\n\nDetails: OpenAI response resp_09078af662a04171006a16dde70774819d919168945ee82a99 did not contain a parsed generated_project payload."
     }
   ],
   "inputs": [
@@ -320,16 +338,13 @@ Generated application files are committed to the repository default branch after
       "code": "CODEX_EMPTY_RESPONSE",
       "message": "Codex returned no generated files."
     }
-  ],
-  "activeInputId": "input_8434078b95afeec429d4",
-  "activeRunKind": "create",
-  "continueContext": "{\n  \"instruction\": \"Auto-repair this deployRocket run. Preserve the user's intent, but optimize for a compact successful static Vite React TypeScript project.\",\n  \"repairDirective\": \"The previous generated-file step failed. Return a smaller complete file set, avoid large data arrays and oversized CSS, and keep contentBase64 valid.\",\n  \"attemptNumber\": 2,\n  \"project\": {\n    \"name\": \"NoirTune AI\",\n    \"summary\": \"A mobile-first, dark-mode, Spotify-inspired web app that lets users generate AI-style music from prompts, manage a personal library of created tracks, and play, delete, download, or share them—all running fully client-side as a static site.\",\n    \"repository\": \"https://github.com/natalikrasnov/noirtune-ai\"\n  },\n  \"latestError\": {\n    \"message\": \"Codex returned no generated files.\",\n    \"code\": \"CODEX_EMPTY_RESPONSE\",\n    \"details\": \"OpenAI response resp_0f47102ea00117fb006a16db8c46c081a3a7e9d533b9bca5e1 did not contain a parsed generated_project payload.\"\n  }\n}"
+  ]
 }
 ~~~
 
 ## Status
 
-Current stage: **Auto-fix agent repairing generated files**
+Current stage: **Failed**
 
 Complete: **no**
 
@@ -338,7 +353,7 @@ Complete: **no**
 | Received user prompt | done |
 | Generated product requirements | done |
 | Created architecture plan | done |
-| Generated project code | current |
+| Generated project code | failed |
 | Committed files to GitHub | pending |
 | Published project | pending |
 
@@ -520,7 +535,20 @@ Code: CODEX_EMPTY_RESPONSE
 - 2026-05-27T11:59:41.450Z - Auto-fix agent is retrying Codex with a smaller repair brief (warning) - Attempt 2 of 2.
 Original error: Codex returned no generated files.
 Code: CODEX_EMPTY_RESPONSE
+- 2026-05-27T12:09:23.709Z - Auto-fix agent needs user help to continue. (error) - The auto-fix agent tried 2 times for codex_generation.
+
+Last error: Codex returned no generated files.
+
+Details: OpenAI response resp_09078af662a04171006a16dde70774819d919168945ee82a99 did not contain a parsed generated_project payload.
 
 ## Latest Error
 
-None.
+Auto-fix agent needs user help to continue.
+
+~~~text
+The auto-fix agent tried 2 times for codex_generation.
+
+Last error: Codex returned no generated files.
+
+Details: OpenAI response resp_09078af662a04171006a16dde70774819d919168945ee82a99 did not contain a parsed generated_project payload.
+~~~
