@@ -8,19 +8,19 @@ Generated application files are committed to the repository default branch after
 
 ~~~deployrocket-state-json
 {
-  "id": "bmF0YWxpa3Jhc25vdi9wb2NrZXQtbWluaS1hcHA",
+  "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
   "name": "Pocket Mini App",
   "summary": "A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.",
   "status": "CODEX_WORKING",
   "currentStep": "Continuing Codex generation",
   "githubRepoUrl": "https://github.com/natalikrasnov/pocket-mini-app",
   "githubOwner": "natalikrasnov",
-  "githubRepo": "pocket-mini-app",
+  "githubRepo": "noirtune-ai",
   "githubUserLogin": "natalikrasnov",
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T13:44:14.305Z",
+  "updatedAt": "2026-05-27T13:44:16.998Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
