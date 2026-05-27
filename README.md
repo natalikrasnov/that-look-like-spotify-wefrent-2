@@ -11,8 +11,8 @@ Generated application files are committed to the repository default branch after
   "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
   "name": "Pocket Mini App",
   "summary": "A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.",
-  "status": "GENERATING_PROMPT",
-  "currentStep": "Generating Codex prompt",
+  "status": "SENDING_TO_CODEX",
+  "currentStep": "Submitting prompt to Codex",
   "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
   "githubOwner": "natalikrasnov",
   "githubRepo": "noirtune-ai",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T12:11:48.891Z",
+  "updatedAt": "2026-05-27T12:11:51.161Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -244,6 +244,13 @@ Generated application files are committed to the repository default branch after
       "message": "Generated structured Codex prompt",
       "level": "success",
       "status": "GENERATING_PROMPT"
+    },
+    {
+      "id": "action_ef0a8eb9c7646f3f68f8",
+      "at": "2026-05-27T12:11:51.161Z",
+      "message": "Sent prompt to Codex",
+      "level": "info",
+      "status": "SENDING_TO_CODEX"
     }
   ],
   "inputs": [
@@ -436,7 +443,7 @@ Generated application files are committed to the repository default branch after
 
 ## Status
 
-Current stage: **Generating Codex prompt**
+Current stage: **Submitting prompt to Codex**
 
 Complete: **no**
 
@@ -444,8 +451,8 @@ Complete: **no**
 | --- | --- |
 | Received user prompt | done |
 | Generated product requirements | done |
-| Created architecture plan | current |
-| Generated project code | pending |
+| Created architecture plan | done |
+| Generated project code | current |
 | Committed files to GitHub | pending |
 | Published project | pending |
 
@@ -617,6 +624,7 @@ Details: OpenAI response resp_09078af662a04171006a16dde70774819d919168945ee82a99
 - 2026-05-27T12:11:07.821Z - Creating architecture and implementation prompt (info)
 - 2026-05-27T12:11:10.055Z - Creating architecture and implementation prompt (info)
 - 2026-05-27T12:11:48.891Z - Generated structured Codex prompt (success)
+- 2026-05-27T12:11:51.161Z - Sent prompt to Codex (info)
 
 ## Latest Error
 
