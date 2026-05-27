@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T12:10:59.459Z",
+  "updatedAt": "2026-05-27T12:11:01.601Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -215,6 +215,13 @@ Generated application files are committed to the repository default branch after
       "at": "2026-05-27T12:10:46.963Z",
       "message": "Processing edit request",
       "level": "info",
+      "status": "PROCESSING_INPUT"
+    },
+    {
+      "id": "action_8f40acbf79b4ad0703e5",
+      "at": "2026-05-27T12:11:01.601Z",
+      "message": "Generated structured product requirements",
+      "level": "success",
       "status": "PROCESSING_INPUT"
     }
   ],
@@ -502,6 +509,7 @@ Last error: Codex returned no generated files.
 Details: OpenAI response resp_09078af662a04171006a16dde70774819d919168945ee82a99 did not contain a parsed generated_project payload.
 - 2026-05-27T12:10:42.567Z - Received edit request (info)
 - 2026-05-27T12:10:46.963Z - Processing edit request (info)
+- 2026-05-27T12:11:01.601Z - Generated structured product requirements (success)
 
 ## Latest Error
 
