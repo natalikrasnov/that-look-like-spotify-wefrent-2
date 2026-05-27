@@ -11,8 +11,8 @@ Generated application files are committed to the repository default branch after
   "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
   "name": "NoirTune AI",
   "summary": "A mobile-first, dark-mode, Spotify-inspired web app that lets users generate AI-style music from prompts, manage a personal library of created tracks, and play, delete, download, or share them—all running fully client-side as a static site.",
-  "status": "FAILED",
-  "currentStep": "Failed",
+  "status": "CODEX_WORKING",
+  "currentStep": "Continuing Codex generation",
   "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
   "githubOwner": "natalikrasnov",
   "githubRepo": "noirtune-ai",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T11:39:24.645Z",
+  "updatedAt": "2026-05-27T11:39:26.751Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -124,6 +124,13 @@ Generated application files are committed to the repository default branch after
       "level": "success",
       "status": "FAILED",
       "details": "https://github.com/natalikrasnov/noirtune-ai"
+    },
+    {
+      "id": "action_5aff0a8c2ce0b2e68a0a",
+      "at": "2026-05-27T11:39:26.751Z",
+      "message": "Continuing failed run with previous dossier, prompt, architecture, and error context",
+      "level": "warning",
+      "status": "CODEX_WORKING"
     }
   ],
   "inputs": [
@@ -238,7 +245,7 @@ Generated application files are committed to the repository default branch after
 
 ## Status
 
-Current stage: **Failed**
+Current stage: **Continuing Codex generation**
 
 Complete: **no**
 
@@ -247,7 +254,7 @@ Complete: **no**
 | Received user prompt | done |
 | Generated product requirements | done |
 | Created architecture plan | done |
-| Generated project code | failed |
+| Generated project code | current |
 | Committed files to GitHub | pending |
 | Published project | pending |
 
@@ -402,6 +409,7 @@ Last error: Codex returned no generated files.
 
 Details: OpenAI response resp_0c0e2d93453c717f006a16d590e3308192bf0e42f007f55391 did not contain a parsed generated_project payload.
 - 2026-05-27T11:39:20.519Z - Renamed GitHub repository to noirtune-ai (success) - https://github.com/natalikrasnov/noirtune-ai
+- 2026-05-27T11:39:26.751Z - Continuing failed run with previous dossier, prompt, architecture, and error context (warning)
 
 ## Latest Error
 
