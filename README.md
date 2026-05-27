@@ -11,8 +11,8 @@ Generated application files are committed to the repository default branch after
   "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
   "name": "Pocket Mini App",
   "summary": "A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.",
-  "status": "PROCESSING_INPUT",
-  "currentStep": "Processing input",
+  "status": "GENERATING_PROMPT",
+  "currentStep": "Generating Codex prompt",
   "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
   "githubOwner": "natalikrasnov",
   "githubRepo": "noirtune-ai",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T12:11:05.185Z",
+  "updatedAt": "2026-05-27T12:11:07.821Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -223,6 +223,13 @@ Generated application files are committed to the repository default branch after
       "message": "Generated structured product requirements",
       "level": "success",
       "status": "PROCESSING_INPUT"
+    },
+    {
+      "id": "action_a6973ce08789b99d3115",
+      "at": "2026-05-27T12:11:07.821Z",
+      "message": "Creating architecture and implementation prompt",
+      "level": "info",
+      "status": "GENERATING_PROMPT"
     }
   ],
   "inputs": [
@@ -375,15 +382,15 @@ Generated application files are committed to the repository default branch after
 
 ## Status
 
-Current stage: **Processing input**
+Current stage: **Generating Codex prompt**
 
 Complete: **no**
 
 | Stage | State |
 | --- | --- |
 | Received user prompt | done |
-| Generated product requirements | current |
-| Created architecture plan | pending |
+| Generated product requirements | done |
+| Created architecture plan | current |
 | Generated project code | pending |
 | Committed files to GitHub | pending |
 | Published project | pending |
@@ -510,6 +517,7 @@ Details: OpenAI response resp_09078af662a04171006a16dde70774819d919168945ee82a99
 - 2026-05-27T12:10:42.567Z - Received edit request (info)
 - 2026-05-27T12:10:46.963Z - Processing edit request (info)
 - 2026-05-27T12:11:05.185Z - Generated structured product requirements (success)
+- 2026-05-27T12:11:07.821Z - Creating architecture and implementation prompt (info)
 
 ## Latest Error
 
