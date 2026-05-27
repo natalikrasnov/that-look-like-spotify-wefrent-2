@@ -11,8 +11,8 @@ Generated application files are committed to the repository default branch after
   "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
   "name": "NoirTune AI",
   "summary": "A mobile-first, dark-mode, Spotify-inspired web app that lets users generate AI-style music from prompts, manage a personal library of created tracks, and play, delete, download, or share them—all running fully client-side as a static site.",
-  "status": "FAILED",
-  "currentStep": "Failed",
+  "status": "CODEX_WORKING",
+  "currentStep": "Continuing Codex generation",
   "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
   "githubOwner": "natalikrasnov",
   "githubRepo": "noirtune-ai",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T11:48:59.810Z",
+  "updatedAt": "2026-05-27T11:49:01.650Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -171,6 +171,13 @@ Generated application files are committed to the repository default branch after
       "level": "error",
       "status": "FAILED",
       "details": "The auto-fix agent tried 2 times for codex_generation.\n\nLast error: Codex returned no generated files.\n\nDetails: OpenAI response resp_014b2cd73c873afc006a16d84f3b34819e9044d50268e1ba37 did not contain a parsed generated_project payload."
+    },
+    {
+      "id": "action_65dae2219726b9b5159e",
+      "at": "2026-05-27T11:49:01.650Z",
+      "message": "Continuing failed run with previous dossier, prompt, architecture, and error context",
+      "level": "warning",
+      "status": "CODEX_WORKING"
     }
   ],
   "inputs": [
@@ -285,7 +292,7 @@ Generated application files are committed to the repository default branch after
 
 ## Status
 
-Current stage: **Failed**
+Current stage: **Continuing Codex generation**
 
 Complete: **no**
 
@@ -294,7 +301,7 @@ Complete: **no**
 | Received user prompt | done |
 | Generated product requirements | done |
 | Created architecture plan | done |
-| Generated project code | failed |
+| Generated project code | current |
 | Committed files to GitHub | pending |
 | Published project | pending |
 
@@ -469,6 +476,7 @@ Details: OpenAI response resp_0603d633af06923d006a16d8484da88193af94587f104a4eb2
 Last error: Codex returned no generated files.
 
 Details: OpenAI response resp_014b2cd73c873afc006a16d84f3b34819e9044d50268e1ba37 did not contain a parsed generated_project payload.
+- 2026-05-27T11:49:01.650Z - Continuing failed run with previous dossier, prompt, architecture, and error context (warning)
 
 ## Latest Error
 
