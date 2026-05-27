@@ -11,8 +11,8 @@ Generated application files are committed to the repository default branch after
   "id": "bmF0YWxpa3Jhc25vdi90aGF0LWxvb2stbGlrZS1zcG90aWZ5LXdlZnJlbnQtMg",
   "name": "Untitled project",
   "summary": "Waiting for input processing.",
-  "status": "IDLE",
-  "currentStep": "Ready",
+  "status": "PROCESSING_INPUT",
+  "currentStep": "Processing input",
   "githubRepoUrl": "https://github.com/natalikrasnov/that-look-like-spotify-wefrent-2",
   "githubOwner": "natalikrasnov",
   "githubRepo": "that-look-like-spotify-wefrent-2",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T11:03:15.405Z",
+  "updatedAt": "2026-05-27T11:03:16.972Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -28,6 +28,13 @@ Generated application files are committed to the repository default branch after
       "message": "Received user input",
       "level": "info",
       "status": "IDLE"
+    },
+    {
+      "id": "action_66c79e42a47e7a7970a5",
+      "at": "2026-05-27T11:03:16.972Z",
+      "message": "Processing user input",
+      "level": "info",
+      "status": "PROCESSING_INPUT"
     }
   ],
   "inputs": [
@@ -48,14 +55,14 @@ Generated application files are committed to the repository default branch after
 
 ## Status
 
-Current stage: **Ready**
+Current stage: **Processing input**
 
 Complete: **no**
 
 | Stage | State |
 | --- | --- |
 | Received user prompt | done |
-| Generated product requirements | pending |
+| Generated product requirements | current |
 | Created architecture plan | pending |
 | Generated project code | pending |
 | Committed files to GitHub | pending |
@@ -90,6 +97,7 @@ Codex prompt plan is pending.
 ## Action History
 
 - 2026-05-27T11:03:13.038Z - Received user input (info)
+- 2026-05-27T11:03:16.972Z - Processing user input (info)
 
 ## Latest Error
 
