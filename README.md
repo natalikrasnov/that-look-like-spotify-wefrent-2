@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T12:11:12.481Z",
+  "updatedAt": "2026-05-27T12:11:46.681Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -377,6 +377,46 @@ Generated application files are committed to the repository default branch after
         ],
         "imageContext": [],
         "repositoryNameSuggestion": "pocket-mini-app"
+      },
+      "codexPrompt": {
+        "title": "Pocket Mini App (Vite + React + TypeScript) — Quick Notes + Settings (Static/GitHub Pages)",
+        "summary": "Create a complete, production-oriented but minimal mobile-first SPA that runs fully in the browser (static files) and can deploy to GitHub Pages (including subpath deployments). Core feature: Quick Notes CRUD persisted in localStorage, plus Settings for theme toggle and clearing data, and About screen.",
+        "architectureInstructions": [
+          "Use Vite + React + TypeScript. Output a complete replacement file set (all necessary files) with no TODOs.",
+          "App must be fully static and serverless: no backend, no API calls, no auth, no databases. Persist only via localStorage and in-memory state.",
+          "Ensure GitHub Pages compatibility, including repository subpath deployments and refresh-safe routing. Prefer HashRouter to avoid 404s on deep links; set Vite base to './' (relative) for static hosting.",
+          "Implement a small but production-like structure: routing, reusable UI components, typed models, storage utilities, and clear separation of concerns.",
+          "Prioritize mobile-first responsive design, accessibility (labels, focus states, aria where helpful), and a visually polished minimal UI (light/dark themes)."
+        ],
+        "frontendInstructions": [
+          "Screens/routes: Home/Notes List, Note Editor (new/edit), Settings, About.",
+          "Navigation: bottom nav or simple top bar (mobile-first). Show active state; large tap targets.",
+          "Notes list: show empty state when no notes. Each note shows title (or “Untitled”), body preview, and updated timestamp. Provide CTA to create a new note.",
+          "Note editor: title optional, body required. Provide Save/Cancel. Prevent saving empty body; show inline validation message. Provide delete action when editing existing note (with confirmation).",
+          "Settings: toggle light/dark theme (persist to localStorage); clear all notes/data (confirmation). Show small app info (name + version).",
+          "About: brief description and version info.",
+          "Global theme: CSS variables for colors, spacing, typography; support prefers-reduced-motion; ensure good contrast. Persist theme choice and apply to document root.",
+          "Provide lightweight feedback for actions (e.g., toast/snackbar component for “Saved”, “Deleted”, “Cleared”)."
+        ],
+        "backendInstructions": [
+          "No backend code. Implement “backend-like” behavior with localStorage utilities and React state.",
+          "Create a typed storage layer (e.g., src/lib/storage.ts) for notes + settings, with safe JSON parsing and schema defaults.",
+          "Use stable IDs for notes (prefer crypto.randomUUID with fallback)."
+        ],
+        "modificationInstructions": [
+          "Since no files exist, generate the entire project from scratch as a complete replacement file set.",
+          "Do not make README-only output; the code must implement all screens/features and be buildable with `npm install` + `npm run build`.",
+          "Avoid placeholder TODOs. All flows (create/edit/delete, theme toggle, clear data) must be fully functional."
+        ],
+        "acceptanceCriteria": [
+          "`npm install`, `npm run dev`, and `npm run build` succeed with no missing files.",
+          "App is a static SPA that works on GitHub Pages, including repo subpath hosting (assets load correctly) and deep-linking without server rewrites (use HashRouter).",
+          "Notes CRUD works: create, edit, delete; body required; validation prevents empty body saves; localStorage persistence verified across reloads.",
+          "Settings work: theme toggle persists; clear all data removes notes and shows confirmation + feedback.",
+          "UI is mobile-first, touch-friendly, accessible (labels, focus indicators), and visually polished with light/dark themes.",
+          "Empty states, confirmations, and basic feedback (toast/snackbar) are implemented."
+        ],
+        "codexPrompt": "You are Codex. Generate a complete replacement file set for a new repository implementing the app described below. Output ALL files needed for a buildable Vite React TypeScript project.\n\nProject: “Pocket Mini App”\nSummary: A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature (Quick Notes), and lightweight settings—all running fully in the browser as static files.\n\nHard constraints:\n- Must be a static, serverless, browser-only app suitable for GitHub Pages.\n- No backend, no APIs, no auth, no databases, no serverless functions.\n- Persistence must use localStorage and in-memory state only.\n- Must build with Vite + React + TypeScript.\n- Must work on GitHub Pages under repository subpaths; assets must load correctly.\n- Routing must be refresh-safe on GitHub Pages: use HashRouter (recommended) rather than BrowserRouter.\n- No TODO placeholders.\n\nRequired screens:\n1) Home / Notes List\n- List notes sorted by updated time desc.\n- Empty state when no notes.\n- Prominent CTA to create a new note.\n- Each note row: title (or “Untitled”), body preview, updated timestamp.\n- Tap a note to edit.\n\n2) Note Editor\n- Supports creating and editing.\n- Fields: title (optional), body (required).\n- Save + Cancel buttons.\n- Validation: prevent saving if body is empty/whitespace; show inline error.\n- When editing an existing note, show Delete action with confirmation.\n\n3) Settings\n- Toggle light/dark mode; persist to localStorage.\n- Clear all data (notes + settings or at least notes) with confirmation.\n- Show app info: name and version.\n\n4) About\n- Brief description and version info.\n\nDesign/UX requirements:\n- Minimal, polished mobile-first UI.\n- Touch-friendly controls (>=44px hit targets), readable typography.\n- Light/dark themes via CSS variables.\n- Basic feedback: implement a small toast/snackbar system for save/delete/clear actions.\n- Confirm destructive actions (delete note, clear data) via modal dialog or `window.confirm` (prefer a small custom dialog component for polish if reasonable).\n- Accessibility: labeled inputs, aria-label on icon-only buttons, visible focus rings, respect prefers-reduced-motion.\n\nImplementation requirements:\n- Use TypeScript types for Note and Settings.\n- Implement a small storage library with safe parse and defaults.\n- Use `crypto.randomUUID()` for IDs with a fallback function.\n- Use a simple component structure, e.g.:\n  - src/App.tsx\n  - src/main.tsx\n  - src/routes/* (or src/pages/*)\n  - src/components/* (Button, TopBar, BottomNav, Card/ListRow, Dialog, Toast)\n  - src/lib/storage.ts, src/lib/ids.ts, src/lib/date.ts\n  - src/styles.css (or src/styles/*)\n- Use react-router-dom with HashRouter.\n- Configure Vite for GitHub Pages static hosting: set `base: './'` in vite.config.ts.\n\nDeliverables:\n- Provide the complete file tree with file contents.\n- Include: package.json, vite config, tsconfig(s), index.html, src/*, and any assets.\n- Keep dependencies minimal (react, react-dom, react-router-dom). Avoid heavy UI frameworks.\n\nOutput format:\n- Print a concise file tree first.\n- Then for each file, output:\n  - A header line: `// FILE: path/to/file`\n  - The full file contents.\n\nMake sure the app is immediately usable and polished, with all required features implemented."
       }
     }
   ],
@@ -461,7 +501,50 @@ for the first version create a small app
 }
 ~~~
 
-Codex prompt plan is pending.
+### Codex Prompt Plan
+
+~~~json
+{
+  "title": "Pocket Mini App (Vite + React + TypeScript) — Quick Notes + Settings (Static/GitHub Pages)",
+  "summary": "Create a complete, production-oriented but minimal mobile-first SPA that runs fully in the browser (static files) and can deploy to GitHub Pages (including subpath deployments). Core feature: Quick Notes CRUD persisted in localStorage, plus Settings for theme toggle and clearing data, and About screen.",
+  "architectureInstructions": [
+    "Use Vite + React + TypeScript. Output a complete replacement file set (all necessary files) with no TODOs.",
+    "App must be fully static and serverless: no backend, no API calls, no auth, no databases. Persist only via localStorage and in-memory state.",
+    "Ensure GitHub Pages compatibility, including repository subpath deployments and refresh-safe routing. Prefer HashRouter to avoid 404s on deep links; set Vite base to './' (relative) for static hosting.",
+    "Implement a small but production-like structure: routing, reusable UI components, typed models, storage utilities, and clear separation of concerns.",
+    "Prioritize mobile-first responsive design, accessibility (labels, focus states, aria where helpful), and a visually polished minimal UI (light/dark themes)."
+  ],
+  "frontendInstructions": [
+    "Screens/routes: Home/Notes List, Note Editor (new/edit), Settings, About.",
+    "Navigation: bottom nav or simple top bar (mobile-first). Show active state; large tap targets.",
+    "Notes list: show empty state when no notes. Each note shows title (or “Untitled”), body preview, and updated timestamp. Provide CTA to create a new note.",
+    "Note editor: title optional, body required. Provide Save/Cancel. Prevent saving empty body; show inline validation message. Provide delete action when editing existing note (with confirmation).",
+    "Settings: toggle light/dark theme (persist to localStorage); clear all notes/data (confirmation). Show small app info (name + version).",
+    "About: brief description and version info.",
+    "Global theme: CSS variables for colors, spacing, typography; support prefers-reduced-motion; ensure good contrast. Persist theme choice and apply to document root.",
+    "Provide lightweight feedback for actions (e.g., toast/snackbar component for “Saved”, “Deleted”, “Cleared”)."
+  ],
+  "backendInstructions": [
+    "No backend code. Implement “backend-like” behavior with localStorage utilities and React state.",
+    "Create a typed storage layer (e.g., src/lib/storage.ts) for notes + settings, with safe JSON parsing and schema defaults.",
+    "Use stable IDs for notes (prefer crypto.randomUUID with fallback)."
+  ],
+  "modificationInstructions": [
+    "Since no files exist, generate the entire project from scratch as a complete replacement file set.",
+    "Do not make README-only output; the code must implement all screens/features and be buildable with `npm install` + `npm run build`.",
+    "Avoid placeholder TODOs. All flows (create/edit/delete, theme toggle, clear data) must be fully functional."
+  ],
+  "acceptanceCriteria": [
+    "`npm install`, `npm run dev`, and `npm run build` succeed with no missing files.",
+    "App is a static SPA that works on GitHub Pages, including repo subpath hosting (assets load correctly) and deep-linking without server rewrites (use HashRouter).",
+    "Notes CRUD works: create, edit, delete; body required; validation prevents empty body saves; localStorage persistence verified across reloads.",
+    "Settings work: theme toggle persists; clear all data removes notes and shows confirmation + feedback.",
+    "UI is mobile-first, touch-friendly, accessible (labels, focus indicators), and visually polished with light/dark themes.",
+    "Empty states, confirmations, and basic feedback (toast/snackbar) are implemented."
+  ],
+  "codexPrompt": "You are Codex. Generate a complete replacement file set for a new repository implementing the app described below. Output ALL files needed for a buildable Vite React TypeScript project.\n\nProject: “Pocket Mini App”\nSummary: A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature (Quick Notes), and lightweight settings—all running fully in the browser as static files.\n\nHard constraints:\n- Must be a static, serverless, browser-only app suitable for GitHub Pages.\n- No backend, no APIs, no auth, no databases, no serverless functions.\n- Persistence must use localStorage and in-memory state only.\n- Must build with Vite + React + TypeScript.\n- Must work on GitHub Pages under repository subpaths; assets must load correctly.\n- Routing must be refresh-safe on GitHub Pages: use HashRouter (recommended) rather than BrowserRouter.\n- No TODO placeholders.\n\nRequired screens:\n1) Home / Notes List\n- List notes sorted by updated time desc.\n- Empty state when no notes.\n- Prominent CTA to create a new note.\n- Each note row: title (or “Untitled”), body preview, updated timestamp.\n- Tap a note to edit.\n\n2) Note Editor\n- Supports creating and editing.\n- Fields: title (optional), body (required).\n- Save + Cancel buttons.\n- Validation: prevent saving if body is empty/whitespace; show inline error.\n- When editing an existing note, show Delete action with confirmation.\n\n3) Settings\n- Toggle light/dark mode; persist to localStorage.\n- Clear all data (notes + settings or at least notes) with confirmation.\n- Show app info: name and version.\n\n4) About\n- Brief description and version info.\n\nDesign/UX requirements:\n- Minimal, polished mobile-first UI.\n- Touch-friendly controls (>=44px hit targets), readable typography.\n- Light/dark themes via CSS variables.\n- Basic feedback: implement a small toast/snackbar system for save/delete/clear actions.\n- Confirm destructive actions (delete note, clear data) via modal dialog or `window.confirm` (prefer a small custom dialog component for polish if reasonable).\n- Accessibility: labeled inputs, aria-label on icon-only buttons, visible focus rings, respect prefers-reduced-motion.\n\nImplementation requirements:\n- Use TypeScript types for Note and Settings.\n- Implement a small storage library with safe parse and defaults.\n- Use `crypto.randomUUID()` for IDs with a fallback function.\n- Use a simple component structure, e.g.:\n  - src/App.tsx\n  - src/main.tsx\n  - src/routes/* (or src/pages/*)\n  - src/components/* (Button, TopBar, BottomNav, Card/ListRow, Dialog, Toast)\n  - src/lib/storage.ts, src/lib/ids.ts, src/lib/date.ts\n  - src/styles.css (or src/styles/*)\n- Use react-router-dom with HashRouter.\n- Configure Vite for GitHub Pages static hosting: set `base: './'` in vite.config.ts.\n\nDeliverables:\n- Provide the complete file tree with file contents.\n- Include: package.json, vite config, tsconfig(s), index.html, src/*, and any assets.\n- Keep dependencies minimal (react, react-dom, react-router-dom). Avoid heavy UI frameworks.\n\nOutput format:\n- Print a concise file tree first.\n- Then for each file, output:\n  - A header line: `// FILE: path/to/file`\n  - The full file contents.\n\nMake sure the app is immediately usable and polished, with all required features implemented."
+}
+~~~
 
 ## Action History
 
