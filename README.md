@@ -9,8 +9,8 @@ Generated application files are committed to the repository default branch after
 ~~~deployrocket-state-json
 {
   "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
-  "name": "Pocket MVP",
-  "summary": "A small, mobile-first web app template suitable for a first-version release, running entirely in the browser as a static site.",
+  "name": "Pocket Mini App",
+  "summary": "A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.",
   "status": "PROCESSING_INPUT",
   "currentStep": "Processing input",
   "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T12:11:01.601Z",
+  "updatedAt": "2026-05-27T12:11:02.992Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -216,13 +216,6 @@ Generated application files are committed to the repository default branch after
       "message": "Processing edit request",
       "level": "info",
       "status": "PROCESSING_INPUT"
-    },
-    {
-      "id": "action_8f40acbf79b4ad0703e5",
-      "at": "2026-05-27T12:11:01.601Z",
-      "message": "Generated structured product requirements",
-      "level": "success",
-      "status": "PROCESSING_INPUT"
     }
   ],
   "inputs": [
@@ -333,36 +326,36 @@ Generated application files are committed to the repository default branch after
       "images": [],
       "createdAt": "2026-05-27T12:10:42.291Z",
       "structuredRequirements": {
-        "projectName": "Pocket MVP",
-        "summary": "A small, mobile-first web app template suitable for a first-version release, running entirely in the browser as a static site.",
-        "intent": "Provide a minimal but complete first-version app scaffold that can be expanded later, including basic navigation, a sample feature, and local-only data persistence.",
+        "projectName": "Pocket Mini App",
+        "summary": "A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.",
+        "intent": "Deliver a first-version “small app” that is production-like in structure (routing, UI components, state handling) while remaining minimal in scope and fully client-side.",
         "targetUsers": [
-          "Anyone needing a tiny first-version mobile web app scaffold",
-          "Solo builders prototyping an idea quickly on GitHub Pages"
+          "Anyone who wants a lightweight example mobile web app",
+          "Users who need a simple on-the-go tool with minimal UI"
         ],
         "coreFeatures": [
-          "Mobile-first responsive layout (touch-friendly, single-column default)",
-          "Home screen with a simple primary action (sample feature)",
-          "Create/list/delete simple items (sample data model)",
-          "Client-side persistence using localStorage",
-          "Basic settings screen (clear data/reset app)",
-          "Offline-friendly static assets (no backend calls required)"
+          "Single primary feature: Quick Notes (create, edit, delete short notes)",
+          "Persist notes locally using localStorage (no backend)",
+          "Mobile-first responsive layout with touch-friendly controls",
+          "Simple navigation between screens (client-side routing or view switching)",
+          "Settings: clear all data (notes) and toggle light/dark mode (stored in localStorage)",
+          "Empty/loading states and basic input validation (e.g., prevent saving empty notes)"
         ],
         "screens": [
-          "Home (item list + add item)",
-          "Add/Edit Item (simple form)",
-          "Settings (reset/clear local data, app info)",
-          "About/Help (brief usage instructions)"
+          "Home / Notes List (view notes, create new note CTA)",
+          "Note Editor (create/edit a note: title optional, body required; save/cancel)",
+          "Settings (theme toggle, clear local data, app info)",
+          "About (brief description and version info)"
         ],
-        "designDirection": "Minimal, clean UI optimized for small screens: top header, bottom nav (or simple tab buttons), large tap targets, system fonts, light/dark mode via CSS.",
+        "designDirection": "Minimal, mobile-first UI with a bottom nav or simple top bar; readable typography, large tap targets, and high-contrast light/dark themes. Keep interactions fast with inline editing and clear feedback (e.g., confirmation dialog for delete/clear).",
         "constraints": [
-          "Must be a serverless, browser-only web app runnable from static files on GitHub Pages",
-          "No backend/API/database/auth; simulate persistence via localStorage and in-memory state",
-          "No scheduled jobs; any reminders/updates must be user-triggered in the UI",
-          "Keep scope small for v1; codebase should be easy to extend"
+          "Must be a serverless, browser-only web app that runs from static files on GitHub Pages",
+          "No backend/API/database/auth; simulate persistence with localStorage and in-memory state",
+          "No scheduled jobs; any time-based behavior must be client-side only",
+          "Keep scope small: one core feature plus basic settings and navigation"
         ],
         "imageContext": [],
-        "repositoryNameSuggestion": "pocket-mvp"
+        "repositoryNameSuggestion": "pocket-mini-app"
       }
     }
   ],
@@ -390,9 +383,9 @@ Complete: **no**
 
 ## Project
 
-Name: Pocket MVP
+Name: Pocket Mini App
 
-Summary: A small, mobile-first web app template suitable for a first-version release, running entirely in the browser as a static site.
+Summary: A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.
 
 Repository: https://github.com/natalikrasnov/noirtune-ai
 
@@ -414,36 +407,36 @@ for the first version create a small app
 
 ~~~json
 {
-  "projectName": "Pocket MVP",
-  "summary": "A small, mobile-first web app template suitable for a first-version release, running entirely in the browser as a static site.",
-  "intent": "Provide a minimal but complete first-version app scaffold that can be expanded later, including basic navigation, a sample feature, and local-only data persistence.",
+  "projectName": "Pocket Mini App",
+  "summary": "A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.",
+  "intent": "Deliver a first-version “small app” that is production-like in structure (routing, UI components, state handling) while remaining minimal in scope and fully client-side.",
   "targetUsers": [
-    "Anyone needing a tiny first-version mobile web app scaffold",
-    "Solo builders prototyping an idea quickly on GitHub Pages"
+    "Anyone who wants a lightweight example mobile web app",
+    "Users who need a simple on-the-go tool with minimal UI"
   ],
   "coreFeatures": [
-    "Mobile-first responsive layout (touch-friendly, single-column default)",
-    "Home screen with a simple primary action (sample feature)",
-    "Create/list/delete simple items (sample data model)",
-    "Client-side persistence using localStorage",
-    "Basic settings screen (clear data/reset app)",
-    "Offline-friendly static assets (no backend calls required)"
+    "Single primary feature: Quick Notes (create, edit, delete short notes)",
+    "Persist notes locally using localStorage (no backend)",
+    "Mobile-first responsive layout with touch-friendly controls",
+    "Simple navigation between screens (client-side routing or view switching)",
+    "Settings: clear all data (notes) and toggle light/dark mode (stored in localStorage)",
+    "Empty/loading states and basic input validation (e.g., prevent saving empty notes)"
   ],
   "screens": [
-    "Home (item list + add item)",
-    "Add/Edit Item (simple form)",
-    "Settings (reset/clear local data, app info)",
-    "About/Help (brief usage instructions)"
+    "Home / Notes List (view notes, create new note CTA)",
+    "Note Editor (create/edit a note: title optional, body required; save/cancel)",
+    "Settings (theme toggle, clear local data, app info)",
+    "About (brief description and version info)"
   ],
-  "designDirection": "Minimal, clean UI optimized for small screens: top header, bottom nav (or simple tab buttons), large tap targets, system fonts, light/dark mode via CSS.",
+  "designDirection": "Minimal, mobile-first UI with a bottom nav or simple top bar; readable typography, large tap targets, and high-contrast light/dark themes. Keep interactions fast with inline editing and clear feedback (e.g., confirmation dialog for delete/clear).",
   "constraints": [
-    "Must be a serverless, browser-only web app runnable from static files on GitHub Pages",
-    "No backend/API/database/auth; simulate persistence via localStorage and in-memory state",
-    "No scheduled jobs; any reminders/updates must be user-triggered in the UI",
-    "Keep scope small for v1; codebase should be easy to extend"
+    "Must be a serverless, browser-only web app that runs from static files on GitHub Pages",
+    "No backend/API/database/auth; simulate persistence with localStorage and in-memory state",
+    "No scheduled jobs; any time-based behavior must be client-side only",
+    "Keep scope small: one core feature plus basic settings and navigation"
   ],
   "imageContext": [],
-  "repositoryNameSuggestion": "pocket-mvp"
+  "repositoryNameSuggestion": "pocket-mini-app"
 }
 ~~~
 
@@ -509,7 +502,6 @@ Last error: Codex returned no generated files.
 Details: OpenAI response resp_09078af662a04171006a16dde70774819d919168945ee82a99 did not contain a parsed generated_project payload.
 - 2026-05-27T12:10:42.567Z - Received edit request (info)
 - 2026-05-27T12:10:46.963Z - Processing edit request (info)
-- 2026-05-27T12:11:01.601Z - Generated structured product requirements (success)
 
 ## Latest Error
 
