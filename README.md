@@ -11,8 +11,8 @@ Generated application files are committed to the repository default branch after
   "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
   "name": "Pocket Mini App",
   "summary": "A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.",
-  "status": "SENDING_TO_CODEX",
-  "currentStep": "Submitting prompt to Codex",
+  "status": "CODEX_WORKING",
+  "currentStep": "Codex is generating project files",
   "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
   "githubOwner": "natalikrasnov",
   "githubRepo": "noirtune-ai",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T12:11:56.338Z",
+  "updatedAt": "2026-05-27T12:11:58.549Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -251,6 +251,13 @@ Generated application files are committed to the repository default branch after
       "message": "Sent prompt to Codex",
       "level": "info",
       "status": "SENDING_TO_CODEX"
+    },
+    {
+      "id": "action_833a4d3adb5f59fb171a",
+      "at": "2026-05-27T12:11:58.549Z",
+      "message": "Codex started generation",
+      "level": "info",
+      "status": "CODEX_WORKING"
     }
   ],
   "inputs": [
@@ -443,7 +450,7 @@ Generated application files are committed to the repository default branch after
 
 ## Status
 
-Current stage: **Submitting prompt to Codex**
+Current stage: **Codex is generating project files**
 
 Complete: **no**
 
@@ -625,6 +632,7 @@ Details: OpenAI response resp_09078af662a04171006a16dde70774819d919168945ee82a99
 - 2026-05-27T12:11:10.055Z - Creating architecture and implementation prompt (info)
 - 2026-05-27T12:11:48.891Z - Generated structured Codex prompt (success)
 - 2026-05-27T12:11:51.161Z - Sent prompt to Codex (info)
+- 2026-05-27T12:11:58.549Z - Codex started generation (info)
 
 ## Latest Error
 
