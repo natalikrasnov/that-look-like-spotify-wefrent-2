@@ -8,14 +8,14 @@ Generated application files are committed to the repository default branch after
 
 ~~~deployrocket-state-json
 {
-  "id": "bmF0YWxpa3Jhc25vdi90aGF0LWxvb2stbGlrZS1zcG90aWZ5LXdlZnJlbnQtMg",
+  "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
   "name": "NoirTune AI",
   "summary": "A mobile-first, dark-mode, Spotify-inspired web app that lets users generate AI-style music from prompts, manage a personal library of created tracks, and play, delete, download, or share them—all running fully client-side as a static site.",
   "status": "FAILED",
   "currentStep": "Failed",
-  "githubRepoUrl": "https://github.com/natalikrasnov/that-look-like-spotify-wefrent-2",
+  "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
   "githubOwner": "natalikrasnov",
-  "githubRepo": "that-look-like-spotify-wefrent-2",
+  "githubRepo": "noirtune-ai",
   "githubUserLogin": "natalikrasnov",
   "githubDefaultBranch": "main",
   "error": {
@@ -30,7 +30,7 @@ Generated application files are committed to the repository default branch after
     "at": "2026-05-27T11:34:12.492Z"
   },
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T11:34:12.812Z",
+  "updatedAt": "2026-05-27T11:39:20.520Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -126,6 +126,14 @@ Generated application files are committed to the repository default branch after
       "level": "error",
       "status": "FAILED",
       "details": "The auto-fix agent tried 2 times for codex_generation.\n\nLast error: Codex returned no generated files.\n\nDetails: OpenAI response resp_0c0e2d93453c717f006a16d590e3308192bf0e42f007f55391 did not contain a parsed generated_project payload."
+    },
+    {
+      "id": "action_b21504e37d59de1a1389",
+      "at": "2026-05-27T11:39:20.519Z",
+      "message": "Renamed GitHub repository to noirtune-ai",
+      "level": "success",
+      "status": "FAILED",
+      "details": "https://github.com/natalikrasnov/noirtune-ai"
     }
   ],
   "inputs": [
@@ -287,7 +295,7 @@ Name: NoirTune AI
 
 Summary: A mobile-first, dark-mode, Spotify-inspired web app that lets users generate AI-style music from prompts, manage a personal library of created tracks, and play, delete, download, or share them—all running fully client-side as a static site.
 
-Repository: https://github.com/natalikrasnov/that-look-like-spotify-wefrent-2
+Repository: https://github.com/natalikrasnov/noirtune-ai
 
 Live site: pending GitHub Pages publish
 
@@ -431,6 +439,7 @@ Code: CODEX_EMPTY_RESPONSE
 Last error: Codex returned no generated files.
 
 Details: OpenAI response resp_0c0e2d93453c717f006a16d590e3308192bf0e42f007f55391 did not contain a parsed generated_project payload.
+- 2026-05-27T11:39:20.519Z - Renamed GitHub repository to noirtune-ai (success) - https://github.com/natalikrasnov/noirtune-ai
 
 ## Latest Error
 
