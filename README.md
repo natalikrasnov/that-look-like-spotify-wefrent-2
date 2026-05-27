@@ -8,19 +8,19 @@ Generated application files are committed to the repository default branch after
 
 ~~~deployrocket-state-json
 {
-  "id": "bmF0YWxpa3Jhc25vdi9ub2lydHVuZS1haQ",
+  "id": "bmF0YWxpa3Jhc25vdi90aGF0LWxvb2stbGlrZS1zcG90aWZ5LXdlZnJlbnQtMg",
   "name": "NoirTune AI",
   "summary": "A mobile-first, dark-mode, Spotify-inspired web app that lets users generate AI-style music from prompts, manage a personal library of created tracks, and play, delete, download, or share them—all running fully client-side as a static site.",
   "status": "CODEX_WORKING",
   "currentStep": "Continuing Codex generation",
   "githubRepoUrl": "https://github.com/natalikrasnov/noirtune-ai",
   "githubOwner": "natalikrasnov",
-  "githubRepo": "noirtune-ai",
+  "githubRepo": "that-look-like-spotify-wefrent-2",
   "githubUserLogin": "natalikrasnov",
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-27T11:39:29.488Z",
+  "updatedAt": "2026-05-27T11:39:30.923Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
