@@ -11,8 +11,8 @@ Generated application files are committed to the repository default branch after
   "id": "bmF0YWxpa3Jhc25vdi9wb2NrZXQtbWluaS1hcHA",
   "name": "Pocket Mini App",
   "summary": "A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.",
-  "status": "FAILED",
-  "currentStep": "Failed",
+  "status": "CODEX_WORKING",
+  "currentStep": "Continuing Codex generation",
   "githubRepoUrl": "https://github.com/natalikrasnov/pocket-mini-app",
   "githubOwner": "natalikrasnov",
   "githubRepo": "pocket-mini-app",
@@ -20,7 +20,7 @@ Generated application files are committed to the repository default branch after
   "githubDefaultBranch": "main",
   "error": null,
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-28T06:21:36.623Z",
+  "updatedAt": "2026-05-28T06:21:38.017Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -352,6 +352,13 @@ Generated application files are committed to the repository default branch after
       "level": "error",
       "status": "FAILED",
       "details": "The auto-fix agent tried 2 times for codex_generation.\n\nLast error: Codex returned malformed generated-file JSON.\n\nDetails: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors."
+    },
+    {
+      "id": "action_d0ba7d44123915e13964",
+      "at": "2026-05-28T06:21:38.017Z",
+      "message": "Continuing failed run with previous dossier, prompt, architecture, and error context",
+      "level": "warning",
+      "status": "CODEX_WORKING"
     }
   ],
   "inputs": [
@@ -545,7 +552,7 @@ Generated application files are committed to the repository default branch after
 
 ## Status
 
-Current stage: **Failed**
+Current stage: **Continuing Codex generation**
 
 Complete: **no**
 
@@ -554,7 +561,7 @@ Complete: **no**
 | Received user prompt | done |
 | Generated product requirements | done |
 | Created architecture plan | done |
-| Generated project code | failed |
+| Generated project code | current |
 | Committed files to GitHub | pending |
 | Published project | pending |
 
@@ -764,6 +771,7 @@ Code: CODEX_MALFORMED_RESPONSE
 Last error: Codex returned malformed generated-file JSON.
 
 Details: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+- 2026-05-28T06:21:38.017Z - Continuing failed run with previous dossier, prompt, architecture, and error context (warning)
 
 ## Latest Error
 
