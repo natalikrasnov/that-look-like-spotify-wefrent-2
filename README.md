@@ -11,16 +11,26 @@ Generated application files are committed to the repository default branch after
   "id": "bmF0YWxpa3Jhc25vdi9wb2NrZXQtbWluaS1hcHA",
   "name": "Pocket Mini App",
   "summary": "A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.",
-  "status": "CODEX_WORKING",
-  "currentStep": "Auto-fix agent repairing generated files",
+  "status": "FAILED",
+  "currentStep": "Failed",
   "githubRepoUrl": "https://github.com/natalikrasnov/pocket-mini-app",
   "githubOwner": "natalikrasnov",
   "githubRepo": "pocket-mini-app",
   "githubUserLogin": "natalikrasnov",
   "githubDefaultBranch": "main",
-  "error": null,
+  "error": {
+    "message": "Auto-fix agent needs user help to continue.",
+    "code": "AUTO_REPAIR_NEEDS_USER",
+    "details": "The auto-fix agent tried 2 times for codex_generation.\n\nLast error: Codex returned malformed generated-file JSON.\n\nDetails: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "setupInstructions": [
+      "Use Edit Mission and ask for a smaller first version.",
+      "Reduce large visual details, generated datasets, or file count.",
+      "Click Continue Mission after adjusting the request."
+    ],
+    "at": "2026-05-28T06:34:26.189Z"
+  },
   "createdAt": "2026-05-27T11:03:13.038Z",
-  "updatedAt": "2026-05-28T06:34:21.875Z",
+  "updatedAt": "2026-05-28T06:34:26.396Z",
   "actions": [
     {
       "id": "action_31cdc0b94c6c17bb318b",
@@ -476,6 +486,14 @@ Generated application files are committed to the repository default branch after
       "level": "warning",
       "status": "CODEX_WORKING",
       "details": "Attempt 1 of 2.\nOriginal error: Codex returned malformed generated-file JSON.\nCode: CODEX_MALFORMED_RESPONSE"
+    },
+    {
+      "id": "action_ad566ebeda85134419fb",
+      "at": "2026-05-28T06:34:26.396Z",
+      "message": "Auto-fix agent needs user help to continue.",
+      "level": "error",
+      "status": "FAILED",
+      "details": "The auto-fix agent tried 2 times for codex_generation.\n\nLast error: Codex returned malformed generated-file JSON.\n\nDetails: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors."
     }
   ],
   "inputs": [
@@ -681,16 +699,13 @@ Generated application files are committed to the repository default branch after
       "code": "CODEX_MALFORMED_RESPONSE",
       "message": "Codex returned malformed generated-file JSON."
     }
-  ],
-  "activeInputId": "input_c88e737f2c6e96ec997a",
-  "activeRunKind": "edit",
-  "continueContext": "{\n  \"instruction\": \"Auto-repair this deployRocket run. Preserve the user's intent, but optimize for a compact successful static Vite React TypeScript project.\",\n  \"repairDirective\": \"The previous generated-file step failed. Return a smaller complete file set, avoid large data arrays and oversized CSS, and keep contentBase64 valid.\",\n  \"attemptNumber\": 1,\n  \"project\": {\n    \"name\": \"Pocket Mini App\",\n    \"summary\": \"A tiny mobile-first web app showcasing a clean home screen, one simple interactive feature, and lightweight settings—all running fully in the browser as static files.\",\n    \"repository\": \"https://github.com/natalikrasnov/pocket-mini-app\"\n  },\n  \"latestError\": {\n    \"message\": \"Codex returned malformed generated-file JSON.\",\n    \"code\": \"CODEX_MALFORMED_RESPONSE\",\n    \"details\": \"429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\"\n  }\n}"
+  ]
 }
 ~~~
 
 ## Status
 
-Current stage: **Auto-fix agent repairing generated files**
+Current stage: **Failed**
 
 Complete: **no**
 
@@ -699,7 +714,7 @@ Complete: **no**
 | Received user prompt | done |
 | Generated product requirements | done |
 | Created architecture plan | done |
-| Generated project code | current |
+| Generated project code | failed |
 | Committed files to GitHub | pending |
 | Published project | pending |
 
@@ -957,7 +972,20 @@ Code: CODEX_MALFORMED_RESPONSE
 - 2026-05-28T06:34:17.506Z - Auto-fix agent is retrying Codex with a smaller repair brief (warning) - Attempt 1 of 2.
 Original error: Codex returned malformed generated-file JSON.
 Code: CODEX_MALFORMED_RESPONSE
+- 2026-05-28T06:34:26.396Z - Auto-fix agent needs user help to continue. (error) - The auto-fix agent tried 2 times for codex_generation.
+
+Last error: Codex returned malformed generated-file JSON.
+
+Details: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
 
 ## Latest Error
 
-None.
+Auto-fix agent needs user help to continue.
+
+~~~text
+The auto-fix agent tried 2 times for codex_generation.
+
+Last error: Codex returned malformed generated-file JSON.
+
+Details: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+~~~
